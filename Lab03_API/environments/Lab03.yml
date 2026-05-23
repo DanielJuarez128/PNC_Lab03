@@ -1,0 +1,6 @@
+name: Lab03
+variables:
+  - name: BASE_URL
+    value: http://localhost:8080
+  - name: ID
+    value: "0"

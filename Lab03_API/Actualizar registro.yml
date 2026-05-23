@@ -1,0 +1,23 @@
+info:
+  name: Actualizar registro
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{BASE_URL}}/api/specimen/{{ID}}"
+  body:
+    type: json
+    data: |-
+      {
+        "name":"Kraken joven",
+        "region":"Oceano",
+        "dangerLevel":50,
+        "isFriendly":false
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
